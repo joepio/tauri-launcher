@@ -15,6 +15,7 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.1.0",
     "solid-js": "^1.5.1"
   }
 }

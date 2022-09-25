@@ -23,6 +23,18 @@ const App: Component = () => {
   );
 };
 
+import { register} from '@tauri-apps/api/globalShortcut';
+import { window as tauriWindow } from '@tauri-apps/api';
+await register('CommandOrControl+t', async () => {
+  const main = tauriWindow.WebviewWindow.getByLabel('main');
+  if (!main) {
+    // open screen
+  } else {
+    await main.isVisible() ? main.hide() : main.show();
+  }
+  console.log('main', main);
+});
+
 export default App;
 
 const { invoke } = window.__TAURI__.tauri;
