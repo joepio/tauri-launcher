@@ -5,8 +5,8 @@ This template should help get you started developing with Tauri in vanilla HTML,
 ## Running locally
 
 ```sh
-cargo install
-cargo tauri dev
+cd front && pnpm start
+cd .. && cargo tauri dev
 ```
 
 ## Recommended IDE Setup
