@@ -1,10 +1,10 @@
 {
   "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
+    "withGlobalTauri": true,
+    "beforeBuildCommand": "cd front && pnpm run build",
+    "beforeDevCommand": "cd front && pnpm run start",
+    "devPath": "http://localhost:5173",
+    "distDir": "../dist"
   },
   "package": {
     "productName": "tauri-launcher",
