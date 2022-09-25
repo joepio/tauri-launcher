@@ -1,14 +1,10 @@
-# Tauri + Vanilla
+# Tauri-Launcher-test
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+Aims to be a simple raycast alternative.
+Currently doesn't do anything useful.
 
 ## Running locally
 
 ```sh
-cd front && pnpm start
-cd .. && cargo tauri dev
+cargo tauri dev
 ```
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
