@@ -25,8 +25,14 @@ const App: Component = () => {
 
 import { register} from '@tauri-apps/api/globalShortcut';
 import { window as tauriWindow } from '@tauri-apps/api';
+import { WebviewWindow } from '@tauri-apps/api/window';
 await register('CommandOrControl+t', async () => {
+  // const webview = new WebviewWindow('theUniqueLabel', {
+  //   url: '/'
+  // });
   const main = tauriWindow.WebviewWindow.getByLabel('main');
+  // Doesn't seem to work
+  main?.setAlwaysOnTop(true);
   if (!main) {
     // open screen
   } else {
